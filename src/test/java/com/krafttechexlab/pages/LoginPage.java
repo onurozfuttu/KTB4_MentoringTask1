@@ -1,12 +1,13 @@
-package com.krafttechnologie.pages;
+package com.krafttechexlab.pages;
 
-import com.krafttechnologie.utilities.ConfigurationReader;
+import com.krafttechexlab.utilities.ConfigurationReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 
 public class LoginPage extends BasePage {
+
 
     @FindBy(css = "#email")
     public WebElement emailInputBox;
@@ -48,6 +49,8 @@ public class LoginPage extends BasePage {
         emailInputBox.sendKeys(ConfigurationReader.get("userEmail"));
         passwordInputBox.sendKeys(ConfigurationReader.get("userPassword"));
         loginButton.click();
+
+
     }
 
 }

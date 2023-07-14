@@ -1,4 +1,4 @@
-package com.krafttechnologie.utilities;
+package com.krafttechexlab.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;

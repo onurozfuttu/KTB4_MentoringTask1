@@ -1,4 +1,4 @@
-package com.krafttechnologie.utilities;
+package com.krafttechexlab.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

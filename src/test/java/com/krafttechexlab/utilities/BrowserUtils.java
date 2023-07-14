@@ -1,4 +1,4 @@
-package com.krafttechnologie.utilities;
+package com.krafttechexlab.utilities;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -185,7 +185,7 @@ public class BrowserUtils {
     public static void verifyElementDisplayed(By by) {
         try {
             Assert.assertTrue(Driver.get().findElement(by).isDisplayed(), "Element not visible: " + by);
-        } catch (org.openqa.selenium.NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             e.printStackTrace();
             Assert.fail("Element not found: " + by);
 
@@ -201,7 +201,7 @@ public class BrowserUtils {
     public static void verifyElementNotDisplayed(By by) {
         try {
             Assert.assertFalse(Driver.get().findElement(by).isDisplayed(), "Element should not be visible: " + by);
-        } catch (org.openqa.selenium.NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             e.printStackTrace();
 
         }

@@ -1,6 +1,6 @@
-package com.krafttechnologie.pages;
+package com.krafttechexlab.pages;
 
-import com.krafttechnologie.utilities.Driver;
+import com.krafttechexlab.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
